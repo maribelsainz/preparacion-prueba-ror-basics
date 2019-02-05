@@ -1,0 +1,13 @@
+<%= form_with(model: @product, local: true) do |form| %>
+  <%= form.label :name  %>
+  <%= form.text_field :name %>
+  <br>
+  <%= form.label :price %>
+  <%= form.number_field :price %>
+  <br>
+  <%= form.label :description %>
+  <%= form.text_field :description %>
+  <br>
+  <%= form.submit 'Create' %>
+  <%= link_to 'Back', root_path %>
+<% end %>
